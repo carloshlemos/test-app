@@ -1,0 +1,23 @@
+<div class="col-md-6">
+  <h2> Pessoa Details</h2>
+  <button class="btn btn-danger" (click)="addPessoa()"> Add Pessoa</button>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Nome</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let pessoa of pessoas">
+      <td class="hidden">{{pessoa.id}}</td>
+      <td>{{pessoa.nome}}</td>
+      <td>
+        <button class="btn btn-danger" (click)="deletePessoa(pessoa)"> Delete</button>
+        <button class="btn btn-danger" (click)="editPessoa(pessoa)" style="margin-left: 20px;"> Edit</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

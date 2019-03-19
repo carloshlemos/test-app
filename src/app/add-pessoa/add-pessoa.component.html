@@ -1,0 +1,10 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Pessoa</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input formControlName="nome" placeholder="Nome" name="nome" class="form-control" id="nome">
+    </div>
+    <button class="btn btn-success">Update</button>
+  </form>
+</div>
