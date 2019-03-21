@@ -1,14 +1,16 @@
-<div class="container justify-content-center">
+<div class="container">
   <div class="jumbotron">
     <div class="row">
-      <div class="col-md-12">
-        <h2 class="text-center">Cadastro de Pessoa</h2>
+      <div class="col">
+        <h2 class="text-center">Cadastrar Pessoa</h2>
         <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
             <label for="nome">Nome:</label>
             <input formControlName="nome" placeholder="Informe o nome completo" name="nome" class="form-control" id="nome">
           </div>
-          <button class="btn btn-success">Salvar</button>
+          <div class="d-flex justify-content-end">
+            <button class="btn btn-primary">Salvar</button>
+          </div>
         </form>
       </div>
     </div>
